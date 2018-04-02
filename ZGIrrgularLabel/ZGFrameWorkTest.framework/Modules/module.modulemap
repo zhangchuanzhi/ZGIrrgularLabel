@@ -1,0 +1,6 @@
+framework module ZGFrameWorkTest {
+  umbrella header "ZGFrameWorkTest.h"
+
+  export *
+  module * { export * }
+}

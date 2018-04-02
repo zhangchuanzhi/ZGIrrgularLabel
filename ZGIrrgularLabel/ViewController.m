@@ -7,7 +7,9 @@
 //
 
 #import "ViewController.h"
-
+#import <ZGFrameWorkTest/ZGShowResult.h>
+#import "Masonry.h"
+#import "ZGIrregularLabel.h"
 @interface ViewController ()
 
 @end
@@ -16,13 +18,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [ZGShowResult show];
+    ZGIrregularLabel *label=[[ZGIrregularLabel alloc]initWithFrame:CGRectZero];
+    [self.view addSubview:label];
+    label.text=@"测试不规则label";
+    label.backgroundColor=[UIColor cyanColor];
+    label.textColor=[UIColor whiteColor];
+    label.font=[UIFont boldSystemFontOfSize:16];
+    label.textAlignment=NSTextAlignmentCenter;
+    [label mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.offset(64);
+        make.left.offset(90);
+        make.right.offset(-90);
+        make.size.mas_equalTo(CGSizeMake(200, 40));
+    }];
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
 

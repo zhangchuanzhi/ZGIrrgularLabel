@@ -13,6 +13,9 @@
 		23C0A31A2071CF8700FEF18D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C0A3192071CF8700FEF18D /* Assets.xcassets */; };
 		23C0A31D2071CF8700FEF18D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C0A31B2071CF8700FEF18D /* LaunchScreen.storyboard */; };
 		23C0A3202071CF8700FEF18D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C0A31F2071CF8700FEF18D /* main.m */; };
+		23DE7C37207201C5003FAD89 /* ZGIrregularLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DE7C36207201C5003FAD89 /* ZGIrregularLabel.m */; };
+		23EA18CB2071E1F6003DE913 /* ZGFrameWorkTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23EA18CA2071E1F6003DE913 /* ZGFrameWorkTest.framework */; };
+		A21F69D42DEDAA0C850E9EB5 /* libPods-ZGIrrgularLabel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C83D22A066773BD28E87F1FE /* libPods-ZGIrrgularLabel.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		23C0A31C2071CF8700FEF18D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23C0A31E2071CF8700FEF18D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23C0A31F2071CF8700FEF18D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		23DE7C35207201C5003FAD89 /* ZGIrregularLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGIrregularLabel.h; sourceTree = "<group>"; };
+		23DE7C36207201C5003FAD89 /* ZGIrregularLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGIrregularLabel.m; sourceTree = "<group>"; };
+		23EA18CA2071E1F6003DE913 /* ZGFrameWorkTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZGFrameWorkTest.framework; sourceTree = "<group>"; };
+		2921F9F7DB2754708048D635 /* Pods-ZGIrrgularLabel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGIrrgularLabel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZGIrrgularLabel/Pods-ZGIrrgularLabel.debug.xcconfig"; sourceTree = "<group>"; };
+		8E635F79BDD143576E1A5AEA /* Pods-ZGIrrgularLabel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGIrrgularLabel.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZGIrrgularLabel/Pods-ZGIrrgularLabel.release.xcconfig"; sourceTree = "<group>"; };
+		C83D22A066773BD28E87F1FE /* libPods-ZGIrrgularLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZGIrrgularLabel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23EA18CB2071E1F6003DE913 /* ZGFrameWorkTest.framework in Frameworks */,
+				A21F69D42DEDAA0C850E9EB5 /* libPods-ZGIrrgularLabel.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,8 @@
 			children = (
 				23C0A30F2071CF8500FEF18D /* ZGIrrgularLabel */,
 				23C0A30E2071CF8500FEF18D /* Products */,
+				7B3D28221835B7E3255DA745 /* Pods */,
+				828F165491867FF28BD1EB70 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +71,13 @@
 		23C0A30F2071CF8500FEF18D /* ZGIrrgularLabel */ = {
 			isa = PBXGroup;
 			children = (
+				23EA18CA2071E1F6003DE913 /* ZGFrameWorkTest.framework */,
 				23C0A3102071CF8500FEF18D /* AppDelegate.h */,
 				23C0A3112071CF8500FEF18D /* AppDelegate.m */,
 				23C0A3132071CF8500FEF18D /* ViewController.h */,
 				23C0A3142071CF8500FEF18D /* ViewController.m */,
+				23DE7C35207201C5003FAD89 /* ZGIrregularLabel.h */,
+				23DE7C36207201C5003FAD89 /* ZGIrregularLabel.m */,
 				23C0A3162071CF8500FEF18D /* Main.storyboard */,
 				23C0A3192071CF8700FEF18D /* Assets.xcassets */,
 				23C0A31B2071CF8700FEF18D /* LaunchScreen.storyboard */,
@@ -71,6 +87,23 @@
 			path = ZGIrrgularLabel;
 			sourceTree = "<group>";
 		};
+		7B3D28221835B7E3255DA745 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2921F9F7DB2754708048D635 /* Pods-ZGIrrgularLabel.debug.xcconfig */,
+				8E635F79BDD143576E1A5AEA /* Pods-ZGIrrgularLabel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		828F165491867FF28BD1EB70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C83D22A066773BD28E87F1FE /* libPods-ZGIrrgularLabel.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +111,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23C0A3232071CF8700FEF18D /* Build configuration list for PBXNativeTarget "ZGIrrgularLabel" */;
 			buildPhases = (
+				DE86D760DD16A5DD7DC4E422 /* [CP] Check Pods Manifest.lock */,
 				23C0A3092071CF8500FEF18D /* Sources */,
 				23C0A30A2071CF8500FEF18D /* Frameworks */,
 				23C0A30B2071CF8500FEF18D /* Resources */,
+				A24E5F3E2633E702C31837D0 /* [CP] Embed Pods Frameworks */,
+				0E703AC85D040B1DAC266EF2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +133,7 @@
 		23C0A3052071CF8500FEF18D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZG;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = cn;
 				TargetAttributes = {
@@ -136,6 +173,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E703AC85D040B1DAC266EF2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZGIrrgularLabel/Pods-ZGIrrgularLabel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A24E5F3E2633E702C31837D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZGIrrgularLabel/Pods-ZGIrrgularLabel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE86D760DD16A5DD7DC4E422 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZGIrrgularLabel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		23C0A3092071CF8500FEF18D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -144,6 +232,7 @@
 				23C0A3152071CF8500FEF18D /* ViewController.m in Sources */,
 				23C0A3202071CF8700FEF18D /* main.m in Sources */,
 				23C0A3122071CF8500FEF18D /* AppDelegate.m in Sources */,
+				23DE7C37207201C5003FAD89 /* ZGIrregularLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,13 +370,22 @@
 		};
 		23C0A3242071CF8700FEF18D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2921F9F7DB2754708048D635 /* Pods-ZGIrrgularLabel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZGIrrgularLabel",
+				);
 				INFOPLIST_FILE = ZGIrrgularLabel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZGIrrgularLabel",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = offcn.ZGIrrgularLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -297,13 +395,22 @@
 		};
 		23C0A3252071CF8700FEF18D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E635F79BDD143576E1A5AEA /* Pods-ZGIrrgularLabel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZGIrrgularLabel",
+				);
 				INFOPLIST_FILE = ZGIrrgularLabel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZGIrrgularLabel",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = offcn.ZGIrrgularLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
